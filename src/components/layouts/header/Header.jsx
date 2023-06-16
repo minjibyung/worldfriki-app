@@ -1,8 +1,9 @@
-
+import React from 'react';
+import './header.css';
 
 export const Header = () => {
     return(
-        <>
+       
     <header>
     <h1 className="word">World <span>Friki</span></h1>
     <ul className="menu1">
@@ -12,6 +13,5 @@ export const Header = () => {
         <li><a href="libros.html" alt="libros">LIBROS</a></li>
     </ul>
 </header>
-</>
     );
 };

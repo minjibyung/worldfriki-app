@@ -1,35 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./series.css";
 import { Header } from "../../layouts/header/Header";
+import { Categoria } from "../../layouts/categorias/Categoria";
 
 export const Series2 = () => {
     return(
     <>
     
     <Header />
-   
-    <div className="field" id="searchform">
-        <input type="text" name="buscador" id="search" placeholder="¿Que serie buscas?"/>
-      </div>
-      
-      <script className="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-
-      <div className="categoria">
-        <h1>Categorias</h1>
-        <div className="category_list">
-<a href="#" className="category_item" category="all">todo</a>
-<a href="#" className="category_item" category="terror">terror</a>
-<a href="#" className="category_item" category="accion">accion</a>
-<a href="#" className="category_item" category="romance">romance</a>
-<a href="#" className="category_item" category="suspenso">suspenso</a>
-        </div>
-      </div>
-
+    <Categoria />
 
     <h1 className="title">SERIES</h1>
-    {/* <!-- <br>
-    <h2 className="title2">SERIES MAS VISTAS</h2>
-    <br> --> */}
     <section className="Aside">
         <aside className="Aside1" category="suspenso">
             <h5>Palpito</h5>

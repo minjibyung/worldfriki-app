@@ -1,0 +1,43 @@
+header{
+  display: flex;
+  width: 118.9em;
+  height: 100%;
+  margin: auto;
+  background-color: #1d2424;
+}
+.word{
+  margin-left: 30px;
+  font-family: 'Roboto', sans-serif;
+  padding: 25px;
+  color: white;
+  font-size: 35px;
+}
+
+span{
+  color: rgb(169, 67, 67);
+}
+
+.menu1{
+  list-style: none;
+  padding: 5px;
+  width: 90%;
+  height: 75px;
+  max-width: 1000px;
+  margin: auto;
+  margin-left: 430px;
+  font-size: 16px;
+  text-align: right;
+  float: top;
+}
+.menu1 li a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: block;
+ 
+}
+
+.menu1 li{
+  display: inline-block;
+  padding: 10px;   
+}
