@@ -2,25 +2,26 @@
   color: white;
   text-align: center;
   font-size: 35px;
-  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+
 }
 .categoria{
   cursor: pointer;
-  color:red;
   text-align: center;
   font-size: 1em;
   z-index: 1;
+  margin-top: 3em;
 }
 .category_list{
 display: inline-block;
-padding: 15px;  
+padding: 50px; 
 }
 .category_list .category_item{
   /* display: block; */
   width: 10%;
-  padding: 15px 8px 15px;
+  padding: 15px 18px 15px;
   margin-bottom: 15px;
-  background: red;
+  background-color: darkred;
   /* text-align: center; */
   /* text-decoration: none; */
   color:#fff;

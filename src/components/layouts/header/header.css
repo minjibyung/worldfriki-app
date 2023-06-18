@@ -1,13 +1,13 @@
 header{
   display: flex;
-  width: 118.9em;
-  height: 100%;
+  width: 112.4em;
   margin: auto;
-  background-color: #1d2424;
+	font-family: "Open Sans", sans-serif;
+	background-color: #000000;
+	padding: 10px;
 }
-.word{
-  margin-left: 30px;
-  font-family: 'Roboto', sans-serif;
+/* .word{
+  margin-left: 30px;  
   padding: 25px;
   color: white;
   font-size: 35px;
@@ -15,29 +15,230 @@ header{
 
 span{
   color: rgb(169, 67, 67);
-}
+} */
 
 .menu1{
-  list-style: none;
-  padding: 5px;
+  padding: 20px;
   width: 90%;
-  height: 75px;
-  max-width: 1000px;
   margin: auto;
-  margin-left: 430px;
-  font-size: 16px;
-  text-align: right;
-  float: top;
+  font-size: 13px;
 }
-.menu1 li a{
+/* .menu1 li a{
   text-decoration: none;
   color: white;
   padding: 20px;
   display: block;
  
-}
+} */
 
-.menu1 li{
+/* .menu1 li{
   display: inline-block;
   padding: 10px;   
+} */
+
+/* CSS FRESHSMILE */
+/* 
+.menu1 h1 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	margin: 0;
+	color: #ffffff;
+	margin-right: 10%;
+} */
+.menu1 h1{
+  color: #ffffff;
+}
+.menu1 h1 span {
+  color: rgb(169, 67, 67);
+}
+
+/* .menu1 ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+} */
+
+.links {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 0.5rem;
+	font-size: 22px;
+	position: relative;
+	transition: transform 0.3s ease;
+}
+
+.links:hover {
+  color: rgb(169, 67, 67);
+}
+
+.links + .dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	margin-top: 0.5rem;
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.icono-inicio:hover {
+	transform: scale(1.2);
+}
+
+.dropdown-wrapper {
+	position: relative;
+}
+
+.dropdown-button {
+	display: block;
+	padding: 0.5rem;
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #5ffdff;
+	border: none;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	margin-top: 0.5rem;
+	box-shadow: 0 0 0;
+}
+
+.icono-inicio-wrapper {
+	margin-left: auto;
+	margin-right: 2rem;
+}
+
+.links.active {
+  color: rgb(169, 67, 67);
+}
+
+.links2.active {
+ color: rgb(169, 67, 67); 
+}
+
+@media screen and (min-width: 769px) {
+	.toggle-menu {
+		display: none;
+	}
+	.icono-mapa2 {
+		display: none;
+	}
+	.icono-inicio {
+		width: 50px;
+		}
+}
+@media screen and (min-width: 394px) and (max-width: 767px) {
+	.icono-inicio {
+		width: 50px;
+		}
+		.icono-inicio:hover {
+			transform: scale(1.2);
+			-webkit-transform: scale(1.2);
+			-moz-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			-o-transform: scale(1.2);
+}
+		  .icono-inicio-wrapper{
+			margin-left: 60px;
+			position: absolute;
+		  }
+}
+
+@media screen and (max-width: 768px) {
+	.menu1 {
+		flex-direction: column;
+		justify-content: center;
+		height: auto;
+	}
+	.menu1 h1 {
+		font-family: "Open Sans", sans-serif;
+		font-size: 1.7rem;
+		text-transform: uppercase;
+		margin: 0;
+		color: #ffffff;
+		margin-left: 20px; /* Modificado */
+		display: flex;
+		align-items: center;
+	}
+
+	.icon-hamburguer {
+		filter: invert(1);
+		width: 30px;
+	}
+	.toggle-menu {
+		width: 40px;
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		cursor: pointer;
+	}
+	.container2 {
+		display: none;
+	}
+	.container3 {
+		background-color: #000000bf;
+		position: absolute;
+	}
+	.links2 {
+		color: #ffffff;
+		margin: 10px;
+		font-size: large;
+	}
+
+	.menu1 ul {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.menu1 li {
+		margin: 1rem 0;
+	}
+
+	.icono-mapa2 {
+		position: absolute;
+		margin-right: 300px;
+		margin-bottom: 20px;
+	}
+
+	.icono-inicio-wrapper {
+		width: 15px;
+		position: absolute;
+		top: 1rem;
+		right: 0rem;
+		/* margin-left: 100px; */
+		cursor: pointer;
+	}
+	/* .icono-inicio {
+		width: 40px;
+		position: absolute;
+		top: 3rem;
+		left: 9rem;
+		cursor: pointer;
+	} */
+
+	.icono-mapa {
+		display: none;
+	}
+
+	.dropdown-button {
+		font-size: small;
+	}
 }

@@ -1,17 +1,25 @@
-import React, { useState, useEffect } from 'react'
-import { Series2 } from './components/pages/series/Series2';
+import React, { useState} from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Header } from './components/layouts/header/Header';
+import { Series } from './components/pages/series/Series';
+import { Series2 } from "./components/pages/series/Series2";
+import { Libros } from "./components/pages/libros/libros";
+import { Libros2 } from "./components/pages/libros/libros2";
 
 function App() {
-
+  const [headerComponent, setHeaderComponent] = useState(<Header />);
+  
   return (
-    <>
-    <Series2>
-      
-    </Series2>
-    {/* <Routes>
-     <Route path="/Series2" element={<Series2 />} />
-     </Routes> */}
-    </>
+<Router>
+  <div>
+    <Header />
+    <Series />
+    <Series2 />
+    <Libros />
+    <Libros2 />
+  </div>
+</Router>
+
   );
 }
 
