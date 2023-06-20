@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './series.css';
 import { Header } from "../../layouts/header/Header";
 import { Categoria } from "../../layouts/categorias/Categoria";
+import { Slider } from "../../layouts/slider/Slider";
 
 export const Series = () => {
     return(
@@ -142,6 +143,7 @@ más alto. Martin es el co productor ejecutivo y uno de los escritores de la ser
         <h5>Vagabond</h5>
         <a href="https://www.youtube.com/watch?v=tyhnEHCUtv4" target="_blank "><img src="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030686/WorldFriki/VAGABOND_et2h0y.webp"/></a> 
 
+<Slider />
     </aside> 
     </section>
     </>

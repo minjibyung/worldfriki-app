@@ -5,6 +5,7 @@ import { Series } from './components/pages/series/Series';
 import { Series2 } from "./components/pages/series/Series2";
 import { Libros } from "./components/pages/libros/libros";
 import { Libros2 } from "./components/pages/libros/libros2";
+import { Slider } from "./components/layouts/slider/Slider";
 
 function App() {
   const [headerComponent, setHeaderComponent] = useState(<Header />);
@@ -17,6 +18,7 @@ function App() {
     <Series2 />
     <Libros />
     <Libros2 />
+    <Slider />
   </div>
 </Router>
 
