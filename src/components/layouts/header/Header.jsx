@@ -23,7 +23,7 @@ export const Header = () => {
   return (
     <header>
       <div className="menu1">
-        <Link to="#Inicio">
+        <Link to="/Inicio">
         <h1>
           World<span> Friki</span>
         </h1>
@@ -34,9 +34,9 @@ export const Header = () => {
                 <ul>
                   <li>
                     <Link
-                      className={`links2 ${isActiveRoute("#Inicio") ? "active" : ""
+                      className={`links2 ${isActiveRoute("/Inicio") ? "active" : ""
                         }`}
-                      to="#Inicio"
+                      to="/Inicio"
                     >
                       Inicio
                     </Link>
@@ -52,18 +52,18 @@ export const Header = () => {
                   </li>
                   <li>
                     <Link
-                      className={`links2 ${isActiveRoute("/Series") ? "active" : ""
+                      className={`links2 ${isActiveRoute("/Seriespage1") ? "active" : ""
                         }`}
-                      to="/Series"
+                      to="/Seriespage1"
                     >
                       Series
                     </Link>
                   </li>
                   <li>
                     <Link
-                      className={`links2 ${isActiveRoute("/Libros") ? "active" : ""
+                      className={`links2 ${isActiveRoute("/Librospage1") ? "active" : ""
                         }`}
-                      to="/Libros"
+                      to="/Librospage1"
                     >
                       Libros
                     </Link>
@@ -76,9 +76,9 @@ export const Header = () => {
             <ul>
               <li>
                 <Link
-                  className={`links ${isActiveRoute("#Inicio") ? "active" : ""
+                  className={`links ${isActiveRoute("/Inicio") ? "active" : ""
                     }`}
-                  to="#Inicio"
+                  to="/Inicio"
                 >
                   Inicio
                 </Link>
@@ -95,18 +95,18 @@ export const Header = () => {
             
               <li>
                 <Link
-                  className={`links ${isActiveRoute("/Series") ? "active" : ""
+                  className={`links ${isActiveRoute("/Seriespage1") ? "active" : ""
                     }`}
-                  to="/Series"
+                  to="/Seriespage1"
                 >
                   Series
                 </Link>
               </li>
               <li>
                 <Link
-                  className={`links ${isActiveRoute("/Libros") ? "active" : ""
+                  className={`links ${isActiveRoute("/Librospage1") ? "active" : ""
                     }`}
-                  to="/Libros"
+                  to="/Librospage1"
                 >
                   Libros
                 </Link>

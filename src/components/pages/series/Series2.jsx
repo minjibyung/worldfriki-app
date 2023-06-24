@@ -142,3 +142,4 @@ Basada en la series de novelas de Sara Shepard.</p><br>
 </>
 );
 };
+export default Series2;

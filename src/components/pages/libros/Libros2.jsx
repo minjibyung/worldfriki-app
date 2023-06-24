@@ -138,3 +138,4 @@ más alto. Martin es el co productor ejecutivo y uno de los escritores de la ser
     </>
     );
 };
+export default Libros2;
