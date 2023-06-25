@@ -1,12 +1,14 @@
 import React from "react";
-import { Categoria } from "../../layouts/categorias/Categoria";
+import Categoria1 from "../../layouts/categorias/Categoria1";
+import SliderBooks from "../../layouts/slider/SliderBooks";
+import Search1 from "../../layouts/search/Search1";
 
 export const Libros = () => {
     return(
         <>
 
-    {/* <Header /> */}
-    <Categoria />
+    <Search1/>
+    <Categoria1 />
 
     <h1 className="title">LIBROS</h1>
     <section className="Aside">
@@ -138,6 +140,7 @@ más alto. Martin es el co productor ejecutivo y uno de los escritores de la ser
         <a href="https://www.penguinlibros.com/co/novela-negra-misterio-y-thriller/25479-ebook-guerra-mundial-z-9788490628096" target="_blank "><img src="https://res.cloudinary.com/dhypxlezc/image/upload/v1687038283/WorldFriki/libros/IT_szztnx.jpg"/></a> 
 
     </aside> 
+    <SliderBooks/>
     </section>
     </>
     );

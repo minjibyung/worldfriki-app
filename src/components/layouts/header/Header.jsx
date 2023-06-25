@@ -43,9 +43,9 @@ export const Header = () => {
                   </li>
                   <li>
                     <Link
-                      className={`links2 ${isActiveRoute("/Peliculas") ? "active" : ""
+                      className={`links2 ${isActiveRoute("/Pelispage1") ? "active" : ""
                         }`}
-                      to="/Peliculas"
+                      to="/Pelispage1"
                     >
                       Peliculas
                     </Link>
@@ -85,9 +85,9 @@ export const Header = () => {
               </li>
               <li>
                 <Link
-                  className={`links ${isActiveRoute("/Peliculas") ? "active" : ""
+                  className={`links ${isActiveRoute("/Pelispage1") ? "active" : ""
                     }`}
-                  to="/Peliculas"
+                  to="/Pelispage1"
                 >
                   Peliculas
                 </Link>

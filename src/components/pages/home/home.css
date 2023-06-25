@@ -1,8 +1,8 @@
 h2 {
     color: #fff;
     text-align: center;
-    font-size: 35px;
-    font-family: cursive;
+    font-size: 30px;
+    margin-top: 30px;
 }
 
 /* img{
@@ -14,14 +14,15 @@ h2 {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 470px;
+    width: 440px;
     float: left;
+    margin-top: 30px;
 }
 
 .contenedor figure {
     position: relative;
-    height: 500px;
-    width: 350px;
+    height: 420px;
+    width: 300px;
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0px 10px 20px rgb(145, 145, 146);

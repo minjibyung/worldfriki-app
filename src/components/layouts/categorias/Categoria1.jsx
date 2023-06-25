@@ -1,9 +1,8 @@
 import React from "react";
 import './categoria.css';
 
-export const Categoria = () => {
+export const Categoria1 = () => {
   return(
-    
     <div className="categoria">
         <h1>Categorias</h1>
         <div className="category_list">
@@ -14,6 +13,6 @@ export const Categoria = () => {
 <a href="#" className="category_item" category="suspenso">Suspenso</a>
         </div>
       </div>
-
   );
 };
+export default Categoria1;

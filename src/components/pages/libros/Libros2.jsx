@@ -1,12 +1,13 @@
 import React from "react";
-import { Categoria } from "../../layouts/categorias/Categoria";
+import Categoria1 from "../../layouts/categorias/Categoria1";
+import SliderBooks from "../../layouts/slider/SliderBooks";
 
 export const Libros2 = () => {
     return(
         <>
 
       {/* <Header /> */}
-      <Categoria />
+      <Categoria1 />
 
     <h1 className="title">LIBROS</h1>
     <section className="Aside">
@@ -134,7 +135,7 @@ más alto. Martin es el co productor ejecutivo y uno de los escritores de la ser
 
     </aside> 
     </section>
-
+<SliderBooks/>
     </>
     );
 };

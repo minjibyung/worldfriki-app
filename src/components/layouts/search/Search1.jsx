@@ -1,7 +1,7 @@
 import React from "react";
 import './search.css';
 
-export const Search = () => {
+export const Search1 = () => {
   return(
 <>
 <div className="field" id="searchform">
@@ -12,3 +12,4 @@ export const Search = () => {
 </>
   );
 };
+export default Search1;

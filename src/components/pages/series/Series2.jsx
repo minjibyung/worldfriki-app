@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./series.css";
-import { Header } from "../../layouts/header/Header";
-import { Categoria } from "../../layouts/categorias/Categoria";
+import Categoria1 from "../../layouts/categorias/Categoria1";
+import SliderSeries from "../../layouts/slider/SliderSeries";
 
 export const Series2 = () => {
     return(
     <>
     
     {/* <Header /> */}
-    <Categoria />
+    <Categoria1 />
 
     <h1 className="title">SERIES</h1>
     <section className="Aside">
@@ -138,6 +138,7 @@ Basada en la series de novelas de Sara Shepard.</p><br>
     <a href="https://www.youtube.com/watch?v=KHucKOK-Vik" target="_blank "><img src="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030698/WorldFriki/UMBRELLA_dnskqf.jpg"/></a> 
 
 </aside> 
+<SliderSeries/>
     </section>
 </>
 );

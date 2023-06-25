@@ -1,7 +1,7 @@
 import React from "react";
 import './slider.css';
 
-export const Slider = () => {
+export const SliderSeries = () => {
     return(
         <>
         <ul className="menu">
@@ -13,5 +13,6 @@ export const Slider = () => {
         </li>
       </ul>
         </>
-    )
-}
+    );
+};
+export default SliderSeries;
