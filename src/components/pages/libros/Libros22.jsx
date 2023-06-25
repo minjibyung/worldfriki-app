@@ -2,7 +2,7 @@ import React from "react";
 import Categoria1 from "../../layouts/categorias/Categoria1";
 import SliderBooks from "../../layouts/slider/SliderBooks";
 
-export const Libros2 = () => {
+export const Libros22 = () => {
     return(
         <>
 
@@ -139,4 +139,4 @@ más alto. Martin es el co productor ejecutivo y uno de los escritores de la ser
     </>
     );
 };
-export default Libros2;
+export default Libros22;
