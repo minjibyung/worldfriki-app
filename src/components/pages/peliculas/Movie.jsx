@@ -3,7 +3,7 @@ import Categoria1 from "../../layouts/categorias/Categoria1";
 import SliderMovies from "../../layouts/slider/SliderMovies";
 import Search1 from "../../layouts/search/Search1";
 
-export const Movies = () => {
+export const Movie = () => {
     return(
         <>
         <Search1/>
@@ -144,4 +144,4 @@ Basada en la series de novelas de Sara Shepard.</p><br>
         </>
     );
 };
-export default Movies;
+export default Movie;

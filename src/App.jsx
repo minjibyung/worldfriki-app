@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Header } from './components/layouts/header/Header';
 import { Home } from './components/pages/home/Home';
-import Movies from './components/pages/peliculas/movies';
+import Movies from './components/pages/peliculas/Movie';
 import Series from './components/pages/series/Series';
 import Series2 from './components/pages/series/Series2';
 import Libros from './components/pages/libros/libros';
