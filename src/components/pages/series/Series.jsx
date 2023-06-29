@@ -4,7 +4,6 @@ import Categoria1 from "../../layouts/categorias/Categoria1";
 import SliderSeries from "../../layouts/slider/SliderSeries";
 import Search1 from "../../layouts/search/Search1";
 
-
 export const Series = () => {
     return(
     <>
