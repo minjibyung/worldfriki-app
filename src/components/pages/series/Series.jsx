@@ -7,7 +7,6 @@ import Search1 from "../../layouts/search/Search1";
 export const Series = () => {
     return(
     <>
-
     <Search1/>
     <Categoria1 />
 
