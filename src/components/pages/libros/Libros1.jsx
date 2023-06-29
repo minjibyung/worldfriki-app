@@ -6,7 +6,6 @@ import Search1 from "../../layouts/search/Search1";
 export const Libros1 = () => {
     return(
         <>
-
     <Search1/>
     <Categoria1 />
 
