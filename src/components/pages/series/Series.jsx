@@ -12,9 +12,10 @@ export const Series = () => {
 
     <h1 className="title">SERIES</h1>
     <section className="Aside">
-        <aside className="Aside1" category="suspenso">
+        <aside className="Aside1" id="suspenso">
             <h5>Stranger Things</h5>
-            <a href="https://www.youtube.com/watch?v=220ClSxwhxY" target="_blank "><img src="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030696/WorldFriki/strangerthings1_jiue4t.webp"/></a>
+            <a href="https://www.youtube.com/watch?v=220ClSxwhxY" target="_blank" rel="noopener noreferrer">
+                <img src="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030696/WorldFriki/strangerthings1_jiue4t.webp" alt="Stranger Things"/></a>
             
  {/* <!-- <h5>Sipnosis</h5>           
 <p>Cuando un niño desaparece, sus amigos,
@@ -25,6 +26,7 @@ con el avistamiento de una criatura terrorífica
 y la aparición de una extraña niña.</p><br>
 <li>Cantidad de temporadas: 4</li> --> */}
     </aside>
+
     <aside className="Aside1" category="suspenso">
             <h5>The Good Doctor</h5>
             <a href="https://www.youtube.com/watch?v=xsIFtGfAJ14" target="_blank "><img src="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030696/WorldFriki/thegooddoctor_hyy6vq.jpg"/></a>
@@ -33,6 +35,7 @@ y la aparición de una extraña niña.</p><br>
  Allá tendrá que vencer el escepticismo con el que sus colegas lo reciben.</p><br>
 <li>Cantidad de temporadas: 5</li>  --> */}
         </aside>
+
         <aside className="Aside1" category="accion">
         <h5>Juego De Tronos</h5>
         <a href="https://www.youtube.com/watch?v=9bwcu6rewSY" target="_blank "><img src="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030688/WorldFriki/juegodetronos_hddcbs.jpg"/></a> 
@@ -145,9 +148,11 @@ más alto. Martin es el co productor ejecutivo y uno de los escritores de la ser
     </aside> 
     <SliderSeries />
     </section>
+     )
     </>
-    );
+     );
 };
+
 export default Series;
 
 
