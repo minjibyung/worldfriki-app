@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import 'react-router-dom'
 import { Header } from './components/layouts/header/Header';
 import { Home } from './components/pages/home/Home';
 import Movie from './components/pages/peliculas/Movie';
