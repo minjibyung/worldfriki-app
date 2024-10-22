@@ -6,10 +6,10 @@ export const SliderSeries = () => {
         <>
         <ul className="menu">
         <li>
-          <a href="../../pages/series/Series">1</a>
+          <a href="../Seriespage1">1</a>
         </li>
         <li>
-          <a href="../../pages/series/Series2">2</a>
+          <a href="../Seriespage2">2</a>
         </li>
       </ul>
         </>

@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./series.css";
 import Categoria1 from "../../layouts/categorias/Categoria1";
 import SliderSeries from "../../layouts/slider/SliderSeries";
+import Search1 from "../../layouts/search/Search1";
 
 export const Series2 = () => {
     return(
     <>
-    
-    {/* <Header /> */}
+     <Search1/>
+
     <Categoria1 />
 
     <h1 className="title">SERIES</h1>

@@ -1,12 +1,13 @@
 import React from "react";
 import Categoria1 from "../../layouts/categorias/Categoria1";
 import SliderBooks from "../../layouts/slider/SliderBooks";
+import Search1 from "../../layouts/search/Search1";
 
 export const Libros22 = () => {
     return(
         <>
 
-      {/* <Header /> */}
+    <Search1 />
       <Categoria1 />
 
     <h1 className="title">LIBROS</h1>

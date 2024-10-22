@@ -1,32 +1,17 @@
-.categoria h1{
-  color: white;
-  text-align: center;
-  font-size: 35px;
-  font-family: 'Roboto', sans-serif;
+.category_item {
+  padding: 10px;
+  margin: 5px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #9c6f6f;
+}
 
+.category_item.active {
+  background-color: #be3434;
+  color: black;
 }
 .categoria{
-  cursor: pointer;
   text-align: center;
-  font-size: 1em;
-  z-index: 1;
-  margin-top: 3em;
-}
-.category_list{
-display: inline-block;
-padding: 50px; 
-}
-.category_list .category_item{
-  /* display: block; */
-  width: 10%;
-  padding: 15px 18px 15px;
-  margin-bottom: 15px;
-  background-color: darkred;
-  /* text-align: center; */
-  /* text-decoration: none; */
-  color:#fff;
-
-}
-.category_list .ct_item-active{
-  background:rgb(165, 108, 108);
 }
