@@ -6,6 +6,7 @@
   border: 1px solid #ccc;
   cursor: pointer;
   background-color: #9c6f6f;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .category_item.active {
@@ -14,4 +15,7 @@
 }
 .categoria{
   text-align: center;
+}
+.category_item:hover {
+  transform: scale(1.05);
 }

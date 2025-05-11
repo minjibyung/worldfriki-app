@@ -1,7 +1,6 @@
-import React, { useState } from "react";
 import './categoria.css';
 
-const Categoria1 = () => {
+const Categoria1 = ({ selectedCategory, onCategoryClick }) => {
   const categories = [
     { name: "Todo", id: "all" },
     { name: "Terror", id: "terror" },
@@ -10,13 +9,6 @@ const Categoria1 = () => {
     { name: "Suspenso", id: "suspenso" },
   ];
 
-  // Inicializamos con la categoría "all" seleccionada
-  const [selectedCategory, setSelectedCategory] = useState('all');
-
-  const handleCategoryClick = (categoryId) => {
-    setSelectedCategory(categoryId);
-  };
-
   return (
     <div className="categoria">
       <h1>Categorías</h1>
@@ -24,8 +16,10 @@ const Categoria1 = () => {
         {categories.map((category) => (
           <button
             key={category.id}
-            className={`category_item ${selectedCategory === category.id ? 'active' : ''}`}
-            onClick={() => handleCategoryClick(category.id)}
+            className={`category_item ${
+              selectedCategory === category.id ? "active" : ""
+            }`}
+            onClick={() => onCategoryClick(category.id)}
           >
             {category.name}
           </button>
@@ -34,5 +28,4 @@ const Categoria1 = () => {
     </div>
   );
 };
-
 export default Categoria1;

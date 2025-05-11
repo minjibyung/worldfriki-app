@@ -4,18 +4,10 @@ header{
   margin: auto;
 	font-family: "Open Sans", sans-serif;
 	background-color: #000000;
-
 }
-/* .word{
-  margin-left: 30px;  
-  padding: 25px;
-  color: white;
-  font-size: 35px;
-}
-
 span{
   color: rgb(169, 67, 67);
-} */
+}
 
 .menu1{
   padding: 20px;
@@ -23,21 +15,6 @@ span{
   margin: auto;
   font-size: 10px;
 }
-/* .menu1 li a{
-  text-decoration: none;
-  color: white;
-  padding: 20px;
-  display: block;
- 
-} */
-
-/* .menu1 li{
-  display: inline-block;
-  padding: 10px;   
-} */
-
-/* CSS FRESHSMILE */
-/* 
 .menu1 h1 {
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.7rem;
@@ -45,23 +22,13 @@ span{
 	margin: 0;
 	color: #ffffff;
 	margin-right: 10%;
-} */
+} 
 .menu1 h1{
   color: #ffffff;
 }
 .menu1 h1 span {
   color: rgb(169, 67, 67);
 }
-
-/* .menu1 ul {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	list-style: none;
-} */
-
 .links {
 	text-decoration: none;
 	color: #ffffff;
@@ -226,13 +193,6 @@ span{
 		/* margin-left: 100px; */
 		cursor: pointer;
 	}
-	/* .icono-inicio {
-		width: 40px;
-		position: absolute;
-		top: 3rem;
-		left: 9rem;
-		cursor: pointer;
-	} */
 
 	.icono-mapa {
 		display: none;
