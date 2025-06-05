@@ -1,98 +1,135 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import './series.css';
 import Categoria1 from "../../layouts/categorias/Categoria1";
 import SliderSeries from "../../layouts/slider/SliderSeries";
 import Search1 from "../../layouts/search/Search1";
 
+
+const booksData = [
+    {
+      title: "Stranger Things",
+      category: "suspenso",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030696/WorldFriki/series/strangerthings1_jiue4t.webp",
+      link: "https://www.panamericana.com.co/el-resplandor/p"
+    },
+     {
+      title: "The Good Doctor",
+      category: "accion",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030696/WorldFriki/series/thegooddoctor_hyy6vq.jpg",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+     {
+      title: "Juego De Tronos",
+      category: "accion",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030688/WorldFriki/series/juegodetronos_hddcbs.jpg",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+     {
+      title: "Pretty Little Liars",
+      category: "suspenso",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030693/WorldFriki/series/prettylittleliars_cwx9vc.jpg",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    }, 
+    {
+      title: "Peaky Blinders",
+      category: "accion",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030698/WorldFriki/series/peakybleanders_hsppqo.webp",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+     {
+      title: "The End Of The F***ing World",
+      category: "accion",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030696/WorldFriki/series/fuckingworld_tfbimu.webp",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+     {
+      title: "Riverdale",
+      category: "suspenso",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030697/WorldFriki/series/riverdale_cbpi38.jpg",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+     {
+      title: "Gambito De Dama",
+      category: "accion",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030686/WorldFriki/series/gambitodedama_qmlxnt.jpg",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+     {
+      title: "The Sex Education",
+      category: "comedia",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030695/WorldFriki/series/sexeducation_ulsh1v.jpg",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+     {
+      title: "Euphoria",
+      category: "suspenso",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030693/WorldFriki/series/EUPHORIA_brtm3y.jpg",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+     {
+      title: "Elite",
+      category: "suspenso",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030691/WorldFriki/series/ELITE_nrs3di.jpg",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+     {
+      title: "Mr. Robot",
+      category: "suspenso",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030691/WorldFriki/series/mr.robot_fmmddv.jpg",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+     {
+      title: "La Maldicion De La Hillhouse",
+      category: "terror",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030689/WorldFriki/series/maldicion_p9agyi.jpg",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+     {
+      title: "La Chica Nueva",
+      category: "suspenso",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030688/WorldFriki/series/lachicanueva_lqbimx.jpg",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+     {
+      title: "Vagabond",
+      category: "accion",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030686/WorldFriki/series/VAGABOND_et2h0y.webp",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+     {
+      title: "Young Royals",
+      category: "Romance",
+      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1749070121/WorldFriki/series/youngroyals_ce7nlx.jpg",
+      link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
+    },
+    ];
+
 export const Series = () => {
+    const [selectedCategory, setSelectedCategory] = useState("all");
+      
+        const filteredBooks = selectedCategory === "all"
+          ? booksData
+          : booksData.filter(book => book.category === selectedCategory);
+
     return(
     <>
     <Search1/>
-    <Categoria1 />
+    <Categoria1 
+     selectedCategory={selectedCategory}
+            onCategoryClick={setSelectedCategory}
+            />
 
-    <h1 className="title">SERIES</h1>
-    <section className="Aside">
-
-        <aside className="Aside1" id="suspenso">
-            <h5>Stranger Things</h5>
-            <a href="https://www.youtube.com/watch?v=220ClSxwhxY" target="_blank" rel="noopener noreferrer">
-                <img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030696/WorldFriki/strangerthings1_jiue4t.webp" alt="Stranger Things"/></a>
-    </aside>
-
-    <aside className="Aside1" category="suspenso">
-            <h5>The Good Doctor</h5>
-            <a href="https://www.youtube.com/watch?v=xsIFtGfAJ14" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030696/WorldFriki/thegooddoctor_hyy6vq.jpg"/></a>
-        </aside>
-
-        <aside className="Aside1" category="accion">
-        <h5>Juego De Tronos</h5>
-        <a href="https://www.youtube.com/watch?v=9bwcu6rewSY" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030688/WorldFriki/juegodetronos_hddcbs.jpg"/></a> 
-    </aside>
-
-    <aside className="Aside1" category="suspenso">
-        <h5>Pretty Little Liars</h5>
-        <a href="https://www.youtube.com/watch?v=nwHvFNQG5UE" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030693/WorldFriki/prettylittleliars_cwx9vc.jpg"/></a> 
-    </aside>
-
-    <aside className="Aside1" category="accion">
-        <h5>Peaky Blinders</h5>
-        <a href="https://www.youtube.com/watch?v=H282c9q2MUU" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030698/WorldFriki/peakybleanders_hsppqo.webp"/></a> 
-    </aside>
-
-    <aside className="Aside1" category="suspenso">
-        <h5>The End Of The F***ing World</h5>
-        <a href="https://www.youtube.com/watch?v=tJqIvhprg10" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030696/WorldFriki/fuckingworld_tfbimu.webp"/></a> 
-    </aside>
-
-    <aside className="Aside1" category="suspenso">
-        <h5>Riverdale</h5>
-        <a href="https://www.youtube.com/watch?v=oTfzt6C7PYw" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030697/WorldFriki/riverdale_cbpi38.jpg"/></a> 
-    </aside>
-
-    <aside className="Aside1" category="suspenso">
-        <h5>Gambito De Dama</h5>
-        <a href="https://www.youtube.com/watch?v=-BBgzgNgzeQ" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030686/WorldFriki/gambitodedama_qmlxnt.jpg"/></a> 
-    </aside>
-    
-    <aside className="Aside1" category="accion">
-        <h5>The Sex Education</h5>
-        <a href="https://www.youtube.com/watch?v=1ATuTj8cBy8" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030695/WorldFriki/sexeducation_ulsh1v.jpg"/></a> 
-    </aside>
-
-    <aside className="Aside1" category="suspenso">
-        <h5>Euphoria</h5>
-        <a href="https://www.youtube.com/watch?v=nqSQUrlnB9s" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030693/WorldFriki/EUPHORIA_brtm3y.jpg"/></a> 
-    </aside>
-
-    <aside className="Aside1" category="accion">
-        <h5>Elite</h5>
-        <a href="https://www.youtube.com/watch?v=4rTBAlB1JkQ" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030691/WorldFriki/ELITE_nrs3di.jpg"/></a> 
-    </aside>
-
-    <aside className="Aside1" category="suspenso">
-        <h5>Mr. Robot</h5>
-        <a href="https://www.youtube.com/watch?v=NcgfoRpWLTs" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030691/WorldFriki/mr.robot_fmmddv.jpg"/></a> 
-    </aside>
-
-    <aside className="Aside1" category="terror">
-        <h5>La Maldicion De La hillhouse</h5>
-        <a href="https://www.youtube.com/watch?v=mTvNeafShH0" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030689/WorldFriki/maldicion_p9agyi.jpg"/></a>  
-    </aside>
-
-    <aside className="Aside1" category="accion">
-        <h5>La chica nueva</h5>
-        <a href="https://www.youtube.com/watch?v=TKbLLGRcbcI" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030688/WorldFriki/lachicanueva_lqbimx.jpg"/></a> 
-    </aside> 
-
-    <aside className="Aside1" category="accion">
-        <h5>Vagabond</h5>
-        <a href="https://www.youtube.com/watch?v=tyhnEHCUtv4" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030686/WorldFriki/VAGABOND_et2h0y.webp"/></a> 
-    </aside>
-
-    <aside className="Aside1" category="suspenso">
-            <h5>Young Royals</h5>
-            <a href="https://www.youtube.com/watch?v=xsIFtGfAJ14" target="_blank "><img link="https://res.cloudinary.com/dhypxlezc/image/upload/v1729628548/uGGAoM8ojRHOXj16n6xWiccKr34_fd18kq.jpg"/></a>
-        </aside>
+            
+          <h1 className="title">Series</h1>
+          <section className="Aside">
+            {filteredBooks.map((book, index) => (
+              <aside key={index} className="Aside1" category={book.category}>
+                <h5>{book.title}</h5>
+                <a href={book.link} target="_blank" rel="noopener noreferrer">
+                  <img src={book.img} alt={book.title} />
+                </a>
+              </aside>
+            ))}
 
     <SliderSeries />
     </section>
