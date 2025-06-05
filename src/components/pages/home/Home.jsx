@@ -38,13 +38,13 @@ export const Home = () => {
     
         <div className="contenedor">
             <figure>
-                <img src="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030698/WorldFriki/peakybleanders_hsppqo.webp" alt=""/>
+                {/* <img src="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030698/WorldFriki/peakybleanders_hsppqo.webp" alt=""/> */}
             </figure>
         </div>
     
         <div className="contenedor">
             <figure>
-                <img src="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030694/WorldFriki/SABRINA_aifmwp.webp" alt=""/>
+                {/* <img src="https://res.cloudinary.com/dhypxlezc/image/upload/v1687030694/WorldFriki/SABRINA_aifmwp.webp" alt=""/> */}
             </figure>
         </div>
     

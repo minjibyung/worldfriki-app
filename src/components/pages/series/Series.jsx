@@ -63,7 +63,7 @@ const booksData = [
      {
       title: "Euphoria",
       category: "suspenso",
-      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030693/WorldFriki/series/EUPHORIA_brtm3y.jpg",
+      // img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030693/WorldFriki/series/EUPHORIA_brtm3y.jpg",
       link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
     },
      {
@@ -81,7 +81,7 @@ const booksData = [
      {
       title: "La Maldicion De La Hillhouse",
       category: "terror",
-      img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030689/WorldFriki/series/maldicion_p9agyi.jpg",
+      // img: "https://res.cloudinary.com/dhypxlezc/image/upload/v1687030689/WorldFriki/series/maldicion_p9agyi.jpg",
       link: "https://www.casadellibro.com/libro-el-visitante/9788401021190/7099713"
     },
      {
