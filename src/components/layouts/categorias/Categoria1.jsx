@@ -7,6 +7,7 @@ const Categoria1 = ({ selectedCategory, onCategoryClick }) => {
     { name: "Accion", id: "accion" },
     { name: "Romance", id: "romance" },
     { name: "Suspenso", id: "suspenso" },
+    { name: "Comedia", id: "comedia" },
   ];
 
   return (
